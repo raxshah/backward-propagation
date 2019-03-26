@@ -68,9 +68,4 @@ a_grad,b_grad,c_grad,x_grad,y_grad = numerical_gradient()
 
 for i,j in zip([a,b,c,x,y],[a_grad,b_grad,c_grad,x_grad,y_grad]):
     print('Analytical gradient:',i.grad,'Numerical gradient:',j, sep= ' ')
-
-
-
-
-
-
+    
