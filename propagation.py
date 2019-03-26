@@ -5,11 +5,11 @@ from activation.gates import Unit
 import math
 
 #make each Wire(input) unit that holds two parameters; value and gradient
-a = Unit(1)
-b = Unit(2)
-c = Unit(-3)
-x = Unit(-1)
-y = Unit(3)
+a = Unit(1,0)
+b = Unit(2,0)
+c = Unit(-3,0)
+x = Unit(-1,0)
+y = Unit(3,0)
 
 mulg1 = MultiplyGate()
 mulg2 = MultiplyGate()
