@@ -55,7 +55,6 @@ def numerical_gradient():
         return 1/(1+math.exp(-(a*x+b*y+c)))
     a,b,c,x,y = 1,2,-3,-1,3
     h = 0.0001
-    output_function(a,b,c,x,y)
     a_grad = (output_function(a+h,b,c,x,y) - output_function(a,b,c,x,y))/h
     b_grad = (output_function(a,b+h,c,x,y) - output_function(a,b,c,x,y))/h
     c_grad = (output_function(a,b,c+h,x,y) - output_function(a,b,c,x,y))/h
@@ -68,4 +67,3 @@ a_grad,b_grad,c_grad,x_grad,y_grad = numerical_gradient()
 
 for i,j in zip([a,b,c,x,y],[a_grad,b_grad,c_grad,x_grad,y_grad]):
     print('Analytical gradient:',i.grad,'Numerical gradient:',j, sep= ' ')
-    
